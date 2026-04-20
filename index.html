@@ -33,23 +33,14 @@
 
 <body>
 <script>
-    // Force instant reload (no cache)
-    if (!window.location.hash) {
-        window.location.replace(window.location.href + "#1");
-        window.location.reload(true);
-    }
-
-    // Links array (4টা link add করা হয়েছে)
     const links = [
-        "https://yawnacre.com/n95ubjik?key=f315b73311d800d08ba876bc8c6c04db"
+        "https://yawnacre.com/n95ubjik?key=f315b73311d800d08ba876bc8c04db"
     ];
 
-    // Random pick
     const randomLink = links[Math.floor(Math.random() * links.length)];
 
-    // Ultra fast redirect
+    // fastest redirect (no reload, no delay)
     window.location.replace(randomLink);
 </script>
-
 </body>
 </html>
